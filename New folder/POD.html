@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html Lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bishop Fashion</title>
+    
+<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+          </head>
+<body>
+    <div class="container mx-auto ">
+<header>
+        <nav class="flex justify-between">
+            <div class="logo">
+            <img class="imglogo" src="attachments/ea86c95b-8c9c-4b98-80b6-4942c653aa20.JPG" alt="Bishop Fashion">
+            </div>
+    <ul class="navbar flex items-center">
+        <a class="active" href="index.html">Home</a>
+        <li class="dropdown">
+        <a class="active dropbtn" href="#products">Products</a>
+            <div class="dropdown-content">
+                <br>
+                <br>
+        <a href="#" onclick="location.href='http://bishop.blinkstore.in/'">BASICS</a>
+      <a class="dropdown active" href="#" onclick="location.href='https://thebishopstore.creator-spring.com/'">Premium X</a>
+      <a class="dropdown active" href="#" onclick="location.href='https://example.com/page3'">Option 3</a>
+                 <a class="dropdown active" href="POD.html" onclick="">Upload your own design</a>
+            </div>
+        </li>
+        <li>About Us</li>
+        <li>Contact</li>
+        <li><button class="btn">Buy Now</button></li>
+            </ul>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <hr>
+        </header>
+<form>
+  <label for="file-upload">Choose a file:</label>
+  <input type="file" id="file-upload" name="file-upload">
+</form>
+<input type="file" id="file-upload" name="file-upload" accept="image/*">
+<form>
+  <label for="file-upload">Choose a file:</label>
+  <input type="file" id="file-upload" name="file-upload" accept="image/*">
+  <button type="button" onclick="uploadFile()">Upload</button>
+</form>
+
+<script>
+function uploadFile() {
+  const fileInput = document.getElementById('file-upload');
+  const file = fileInput.files[0];
+  const formData = new FormData();
+  formData.append('file', file);
+
+  // send the file to the server using an AJAX request or fetch API
+  // ...
+}
+</script>
+    </div>
+    </body>
+</html>
